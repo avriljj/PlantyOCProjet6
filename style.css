@@ -1,0 +1,354 @@
+/*
+Theme Name: BlankSlate Child 02
+Theme URI: https://github.com/tidythemes/blankslate
+Template: PlantyOC
+Author: TidyThemes
+Author URI: https://github.com/tidythemes
+Description: Donations: https://calmestghost.com/donate. BlankSlate is the definitive WordPress boilerplate starter theme. We've carefully constructed the most clean and minimalist theme possible for designers and developers to use as a base to build websites for clients or to build completely custom themes from scratch. Clean, simple, unstyled, semi-minified, unformatted, and valid code, SEO-friendly, jQuery-enabled, no programmer comments, standardized and as white label as possible, and most importantly, the CSS is reset for cross-browser-compatability and no intrusive visual CSS styles have been added whatsoever. A perfect skeleton theme. For support and suggestions, go to: https://github.com/tidythemes/blankslate/issues. Thank you.
+Tags: accessibility-ready,one-column,two-columns,custom-menu,featured-images,microformats,sticky-post,threaded-comments,translation-ready
+Version: 2023.1700221912
+Updated: 2023-11-17 11:51:52
+
+*/
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Syne:wght@400;700&display=swap');
+
+
+
+:root{
+    --button-commander-bg-color : #DC9F96;
+    --buttom-commander-text-color : #fff;
+    --buttom-text-color : #000;
+    --title-text-color : #326238;
+    --home-bg-color : #ECE2DA;
+}
+
+body {
+    max-width: 1440px;
+    min-width: 375px;
+    background-color: var(--home-bg-color);
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Syne', sans-serif;
+}
+
+.custom-logo {
+    width: 201px;
+    height: auto;
+    padding-left: 37px;
+}
+#site-description {
+    color: var(--title-text-color);
+    padding-left: 15px;
+}
+#branding {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu li {
+    padding-right: 50px;
+}
+.menu li a {
+    text-decoration: none;
+    color: var(--buttom-text-color);
+}
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--buttom-commander-text-color);
+}
+
+#menu-navigation li:last-child {
+    padding-right: 0;
+    width: 236px;
+    height: 80px;
+    background-color: var(--button-commander-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+#menu-navigation li:last-child a {
+    color: var(--buttom-commander-text-color);
+}
+
+/*** testimonies ****/
+
+.testimony {
+    height: 139px;
+    width: 345px;
+}
+/**** footer *****/
+#footer{
+    background-color: #fff;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*** form nous contacter **/
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*** nous contacter ***/
+
+.wpforms-submit-container {
+    display: flex;
+    justify-content: center;
+}
+.wpforms-title {
+    display: flex;
+    justify-content: center;
+}
+
+
+    
+@media (max-width: 767px) {
+
+/** nav hamburger **/
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#branding {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.leaf-image {
+    display: none;
+}
+.leaf-container{
+    height: 500px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu li {
+    padding-right: 0;
+    width: 236px;
+    height: 80px;
+    background-color: var(--button-commander-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+.menu li a {
+    color: var(--buttom-commander-text-color);
+}
+#menu-navigation li:last-child {
+    padding-right: 0;
+    width: 236px;
+    height: 80px;
+    background-color: var(--button-commander-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+#menu-navigation li:last-child a {
+    color: var(--buttom-commander-text-color);
+}
+
+  }
+
+  /**** acceuil 3 ***/
+
+.wp-block-gallery, .image-container {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: auto;
+  }
+
+.wp-block-image {
+    width: 393px;
+
+}
+
+.wp-block-group__inner-container {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 850px) {
+    .command-info{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+}
+
+/*** command page ****/
+.form-command {
+    width: 100%;
+    }
+    .wpcf7 label 
+    {
+        color: #fff;
+        margin-top: 20px;
+    }
+    
+    .wpcf7 input[type="number"]{
+        background-color: #fff;
+        color: #000;
+        width: 39px;
+        height: 56px;
+    }
+    .wpcf7-form p {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        justify-content: center;
+        
+    }
+    
+    .numbers {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .command-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+        padding-top: 40px;
+        margin-top: 60px;
+        border-top: #fff 1px solid;
+    }
+    
+    .info {
+        padding-right: 50px;
+        border-right: #fff solid 1px;
+    }
+
+
+    .wpcf7-form h3 {
+        margin-top: 50px;
+        color: white;
+        margin-bottom: 50px;
+        font-size: 30px;
+    }
+
+    .wpcf7 input[type="text"],
+    .wpcf7 input[type="email"]
+{
+    background-color: #fff;
+    color: #000;
+    width: 383px;
+    height: 71px;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+
+    .wpcf7 input[type="submit"] {
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #E0B9B4;
+        color: white;
+        font-size: 15px;
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+
+
+@media (max-width: 1024px) {
+
+    .command-info {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .info {
+        padding: 0;
+        border: none;
+    }
+    .wpcf7 input[type="submit"] {
+        position: absolute;
+        top: 105%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #E0B9B4;
+        color: white;
+        font-size: 15px;
+        border-radius: 5px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 769px) {
+    
+    .wpcf7-form p {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        
+    }
+    
+    .numbers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        left: 80%;
+        top: -58%;
+    }
+    .command-info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .command-info-sub{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form-command {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .wpcf7 input[type="text"],
+    .wpcf7 input[type="email"] {
+        width: 100%;
+    }
+    
+}
