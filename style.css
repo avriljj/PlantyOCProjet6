@@ -33,6 +33,7 @@ body {
     box-shadow: none;
 }
 
+/** nav normal **/
 .custom-logo {
     width: 201px;
     height: auto;
@@ -81,6 +82,57 @@ body {
     color: var(--buttom-commander-text-color);
 }
 
+/** fin nav normal **/
+
+/** nav hamburger **/
+    
+@media (max-width: 767px) {
+
+    nav#menu, #menu-navigation li:last-child {
+        width: 100%;
+    }
+    
+#header {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#branding {
+    
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu li {
+    padding-right: 0;
+    width: 100%;
+    height: 80px;
+    background-color: var(--button-commander-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: #C02E44 1px solid;
+}
+.menu li a {
+    color: var(--buttom-commander-text-color);
+}
+.menu li:hover, #menu-navigation li:last-child:hover {
+    color: var(--buttom-commander-text-color);
+    background-color: #C02E44;
+}
+  }
 /**** footer *****/
 #footer{
     background-color: #fff;
@@ -94,6 +146,7 @@ body {
     color: #000;
     font-size: 16px;
 }
+
 /*** nous contacter ***/
 .wpcf7 div.form-nous-contacter label {
     color: #000;
@@ -142,64 +195,6 @@ box-shadow: none;
 }
 
 
-    
-@media (max-width: 767px) {
-
-/** nav hamburger **/
-
-#header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-#branding {
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.leaf-image {
-    display: none;
-}
-.leaf-container{
-    height: 500px;
-}
-
-.menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.menu li {
-    padding-right: 0;
-    width: 236px;
-    height: 80px;
-    background-color: var(--button-commander-bg-color);
-    display: flex;
-    align-items: center;
-    justify-content: center ;
-}
-.menu li a {
-    color: var(--buttom-commander-text-color);
-}
-#menu-navigation li:last-child {
-    padding-right: 0;
-    width: 236px;
-    height: 80px;
-    background-color: var(--button-commander-bg-color);
-    display: flex;
-    align-items: center;
-    justify-content: center ;
-}
-#menu-navigation li:last-child a {
-    color: var(--buttom-commander-text-color);
-}
-
-  }
 
 /*** command page ****/
 .form-command {
