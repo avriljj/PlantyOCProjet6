@@ -81,12 +81,6 @@ body {
     color: var(--buttom-commander-text-color);
 }
 
-/*** testimonies ****/
-
-.testimony {
-    height: 139px;
-    width: 345px;
-}
 /**** footer *****/
 #footer{
     background-color: #fff;
