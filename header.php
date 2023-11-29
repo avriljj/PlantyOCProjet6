@@ -11,13 +11,13 @@
 <header id="header" role="banner">
 <div id="branding">
 <div>
-    <a href="<?php get_permalink()?>">
+    
     <?php
     if ( function_exists( 'the_custom_logo' ) ) {
         the_custom_logo();
     }
     ?>
-    </a>
+   
    
 </div>
 <div id="site-description"<?php if ( !is_single() ) { echo ' itemprop="description"'; } ?>><?php bloginfo( 'description' ); ?></div>
