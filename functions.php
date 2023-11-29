@@ -1,4 +1,5 @@
 <?php
+//plugin generated code for child theme//
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) exit;
 
@@ -22,33 +23,37 @@ endif;
 add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
 
 // END ENQUEUE PARENT ACTION
+//end plugin generated code for child theme//
 
+//setup logo setting dans cutomize site identity/
 function planty_logo_setup() {
 	$defaults = array(
 
 		'width'                => 201,
 		'flex-height'          => true,
 		'flex-width'           => true,
-		'header-text'          => array( 'site-title', 'site-description' ),
-		'unlink-homepage-logo' => true, 
+		 
 	);
 	add_theme_support( 'custom-logo', $defaults );
 }
 add_action( 'after_setup_theme', 'planty_logo_setup' );
 
-/** admin */
+// admin //
 
 // Fonction pour ajouter un élément à la navigation
+// $items est automatiquement détécté par wordpress en fontion de du contexte du code
 function ajouter_element_navigation($items) {
     // Vérifier si l'utilisateur est connecté
     if (is_user_logged_in()) {
         // Ajouter un élément à la navigation
-        $nouvel_element = '<li><a href="http://localhost:8888/OCWPformation/p6/wordpress/wp-admin/">Admin</a></li>';
+        // admin_url pour aller sur page admin//
+        // esc_url pour sanitize ou nettoyer enlever character spéciaux rendre plus sûre//
+        $nouvel_element = '<li><a href="'. esc_url(admin_url()) . '">Admin</a></li>';
         
         // Convertir les éléments de la navigation en tableau
         $menu_items = explode('</li>', $items);
 
-        // Insérer le nouvel élément en avant-dernière position
+        // Insérer le nouvel élément en deuxième position
         array_splice($menu_items, 1, 0, $nouvel_element);
 
         // Réassembler les éléments en une chaîne de caractères
