@@ -26,7 +26,7 @@ Updated: 2023-11-17 11:51:52
 
 body {
     max-width: 1440px;
-    min-width: 375px;
+    min-width: 320px;
     background-color: var(--home-bg-color);
     font-family: 'Raleway', sans-serif;
     font-family: 'Syne', sans-serif;
@@ -95,7 +95,11 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.mention a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
 /*** nous contacter ***/
 .wpcf7 div.form-nous-contacter label {
     color: #000;
@@ -202,37 +206,6 @@ box-shadow: none;
 }
 
   }
-
-  /**** acceuil 3 ***/
-
-.wp-block-gallery, .image-container {
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    margin: auto;
-  }
-
-.wp-block-image {
-    width: 393px;
-
-}
-
-.wp-block-group__inner-container {
-    margin: 0;
-    padding: 0;
-}
-
-@media (max-width: 850px) {
-    .command-info{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-
-    }
-}
 
 /*** command page ****/
 .form-command {
@@ -397,6 +370,85 @@ box-shadow: none;
         justify-content: center;
         position: absolute;
         left: 80%;
+        top: -48%;
+    }
+    .command-info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .command-info-sub{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form-command {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .command-info {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .info {
+        padding: 0;
+        border: none;
+    }
+    .wpcf7 input[type="text"],
+    .wpcf7 input[type="email"],
+    .wpcf7 textarea{
+        border: none;
+        outline: none;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:350px) {
+    
+    body {
+        min-width: 320px;
+    }
+
+    .wpcf7 input[type="submit"] {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #E0B9B4;
+        color: white;
+        font-size: 15px;
+        border-radius: 5px;
+        padding: 20px 40px;
+        box-shadow: none;
+        border: none;
+    }
+    .wpcf7 input[type="submit"]:hover{
+        background-color: #C02E44;
+        color: white;
+    }
+    
+    .wpcf7-form p {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        
+    }
+    
+    .numbers {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        left: 85%;
         top: -48%;
     }
     .command-info{
